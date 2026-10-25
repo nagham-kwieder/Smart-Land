@@ -1212,6 +1212,16 @@ a {
     background 0.3s ease;
 }
 
+.service-card-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin-bottom: 24px;
+    border: 1px solid rgba(245, 248, 244, 0.12);
+    border-radius: 9px;
+    object-fit: cover;
+}
+
 .service-card:hover {
   transform: translateY(-7px);
   border-color: rgba(33, 133, 111, 0.6);
@@ -3843,6 +3853,17 @@ a {
     line-height: 1.8;
 }
 
+.contact-info-item a {
+    color: inherit;
+    overflow-wrap: anywhere;
+    transition: color 0.2s ease;
+}
+
+.contact-info-item a:hover,
+.contact-info-item a:focus-visible {
+    color: var(--gold-light);
+}
+
 /* Decorative brand block */
 
 .contact-decoration {
@@ -4109,20 +4130,18 @@ a {
 }
 
 .home-about-visual {
-    min-height: 390px;
-    position: relative;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     align-items: center;
-    justify-content: center;
-    overflow: hidden;
+    gap: 14px;
+    padding: 14px;
     border: 1px solid var(--border, #3A5559);
     border-radius: 18px;
     background:
-        radial-gradient(circle at center, rgba(33, 133, 111, 0.14), transparent 45%),
-        linear-gradient(135deg, #243E45, #142A32);
+        radial-gradient(circle at 50% 0, rgba(33, 133, 111, 0.12), transparent 55%),
+        var(--charcoal, #1C343B);
 }
 
-.home-about-visual::before,
 .home-project-visual::before {
     content: "";
     position: absolute;
@@ -4134,53 +4153,33 @@ a {
     pointer-events: none;
 }
 
-.home-about-orbit {
-    position: absolute;
-    width: 250px;
-    height: 250px;
-    border: 1px solid rgba(33, 133, 111, 0.4);
-    border-radius: 50%;
+.home-about-image-card {
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid rgba(245, 248, 244, 0.12);
+    border-radius: 12px;
+    background: var(--black, #142A32);
+    transition: transform 0.25s ease, border-color 0.25s ease;
 }
 
-.home-about-orbit.orbit-a {
-    transform: rotateX(65deg) rotate(-25deg);
+.home-about-image-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(197, 221, 104, 0.55);
 }
 
-.home-about-orbit.orbit-b {
-    width: 200px;
-    height: 300px;
-    transform: rotate(45deg);
-    border-color: rgba(33, 133, 111, 0.2);
+.home-about-photo {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
 }
 
-.home-about-center {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-}
-
-.home-about-symbol {
-    width: auto;
-    height: auto;
-    margin-bottom: 12px;
-}
-
-.home-about-caption,
-.home-about-corner {
-    color: var(--gray, #B6C5C0);
-    font-size: 9px;
-    letter-spacing: 2px;
+.home-about-image-card figcaption {
+    padding: 12px 14px;
+    color: var(--white, #F5F8F4);
+    font-size: 12px;
+    font-weight: 700;
     text-align: center;
-}
-
-.home-about-corner {
-    position: absolute;
-    bottom: 20px;
-    left: 15px;
-    right: 15px;
 }
 
 .home-about-content h2,
@@ -4281,6 +4280,16 @@ a {
     align-self: flex-end;
     color: var(--gray, #B6C5C0);
     font-size: 12px;
+}
+
+.home-service-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin-bottom: 16px;
+    border: 1px solid rgba(245, 248, 244, 0.12);
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 .home-service-icon {
@@ -4788,7 +4797,9 @@ a {
     }
 
     .home-about-visual {
-        min-height: 310px;
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 12px;
     }
 
     .home-section-heading {

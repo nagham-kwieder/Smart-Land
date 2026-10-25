@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>مشاريعنا | Land Smart</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="navbar-container">
+
+            <a href="index.html" class="logo" aria-label="الرئيسية - SmartLand">
+                <img src="assets/logo/smartland-logo.svg" alt="" class="logo-mark" aria-hidden="true">
+                <span class="logo-wordmark"><span class="logo-word-smart">Smart</span><span class="logo-word-land">Land</span></span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">الرئيسية</a>
+                <a href="about.html">من نحن</a>
+                <a href="services.html">الخدمات</a>
+                <a href="projects.html" class="active">المشاريع</a>
+                <a href="success-stories.html">إنجازاتنا</a>
+            </nav>
+
+            <a href="contact.html" class="nav-button">
+                لنتحدث <span>→</span>
+            </a>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Projects Hero -->
+        <section class="projects-hero">
+
+            <div class="projects-hero-content">
+
+
+                <h1>
+                    مشاريع لكل واحد منها
+                    <span>فكرته ومجاله</span>
+                </h1>
+
+                <p>
+                    هنا لمحة عن تطبيقات ومنصات في مجالات مختلفة، مثل لغة
+                    الإشارة والإعلانات والتعليم والتسوّق وإدارة المشافي
+                </p>
+
+                <a href="#project-list" class="nav-button">
+                    تصفح المشاريع <span>↓</span>
+                </a>
+
+            </div>
+
+            <div class="projects-hero-art">
+                <div class="project-art-frame">
+                    <div class="art-top-bar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p> SMART Land / المشاريع</p>
+                    </div>
+
+                    <div class="art-content">
+                        <span class="art-label">أفكار رقمية</span>
+                        <div class="art-big-text">ابتكر<span></span></div>
+                        <div class="art-big-text">تواصل<span></span></div>
+                        <div class="art-big-text">تطوّر<span></span></div>
+                        <div class="art-bottom-line"></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Project Filters -->
+        <section class="projects-section" id="project-list">
+
+            <div class="projects-heading">
+                <span class="section-label">المشاريع</span>
+
+                <h2>
+                    تعرّف على
+                    <span>كل مشروع</span>
+                </h2>
+
+                <p>
+                    اختر مجالاً من الأزرار لتصفية المشاريع، أو تصفّحها كلها
+                </p>
+            </div>
+
+            <div class="project-filters">
+                <button class="project-filter active" data-filter="all">
+                    جميع المشاريع
+                </button>
+
+                <button class="project-filter" data-filter="software">
+                    البرمجيات والمنصات
+                </button>
+
+                <button class="project-filter" data-filter="ai">
+                    الذكاء الاصطناعي
+                </button>
+
+                <button class="project-filter" data-filter="systems">
+                    أنظمة الإدارة
+                </button>
+
+                <button class="project-filter" data-filter="ecommerce">
+                    التجارة الإلكترونية
+                </button>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <article class="project-card" data-category="ai">
+
+                    <div class="project-visual signal-visual" data-media-slot="smart-signal">
+                        <img
+                            src="assets/images/signal.avif"
+                            alt="صورة تطبيق Smart Signal لترجمة لغة الإشارة"
+                            class="project-image"
+                        >
+                        <span class="project-tag">تطبيق ترجمة لغة الإشارة</span>
+
+                        <span class="visual-caption">ترجمة لغة الإشارة</span>
+                    </div>
+
+                    <div class="project-info">
+                        <div class="project-meta">
+                            <span>01</span>
+                            <span>تطبيقات</span>
+                        </div>
+
+                        <h3>Smart Signal</h3>
+
+                        <p>
+                            تطبيق يركّز على ترجمة لغة الإشارة، بهدف جعل
+                            التواصل والوصول إلى المعلومات أسهل.
+                        </p>
+
+                        <a href="contact.html" class="project-link">
+                            اعرف المزيد <span>↗</span>
+                        </a>
+                    </div>
+
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card" data-category="software">
+
+                    <div class="project-visual mykey-visual" data-media-slot="mykey">
+                        <img
+                            src="assets/images/myKey.avif"
+                            alt="صورة منصة MyKey للإعلانات العقارية والمركبات"
+                            class="project-image"
+                        >
+                        <span class="project-tag">منصة إعلانات</span>
+
+                        <span class="visual-caption">عقارات ومركبات للبيع والإيجار</span>
+                    </div>
+
+                    <div class="project-info">
+                        <div class="project-meta">
+                            <span>02</span>
+                            <span>منصة رقمية</span>
+                        </div>
+
+                        <h3>MyKey</h3>
+
+                        <p>
+                            منصة لعرض إعلانات العقارات والمركبات المتاحة
+                            للبيع أو الإيجار ومراجعة الخيارات المعروضة.
+                        </p>
+
+                        <a href="contact.html" class="project-link">
+                            اعرف المزيد <span>↗</span>
+                        </a>
+                    </div>
+
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card" data-category="software">
+
+                    <div class="project-visual sada-visual" data-media-slot="sada">
+                        <img
+                            src="assets/images/Saad.avif"
+                            alt="صورة المنصة التعليمية سادا للتعلّم الإلكتروني"
+                            class="project-image"
+                        >
+                        <span class="project-tag">منصة تعلّم إلكتروني</span>
+
+                        <span class="visual-caption">التعلّم عن بُعد</span>
+                    </div>
+
+                    <div class="project-info">
+                        <div class="project-meta">
+                            <span>03</span>
+                            <span>التعليم الإلكتروني</span>
+                        </div>
+
+                        <h3>Sada</h3>
+
+                        <p>
+                            منصة تساعد المتعلمين على الوصول إلى المحتوى
+                            التعليمي ومتابعة دراستهم عبر الإنترنت.
+                        </p>
+
+                        <a href="contact.html" class="project-link">
+                            اعرف المزيد <span>↗</span>
+                        </a>
+                    </div>
+
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card" data-category="ecommerce">
+
+                    <div class="project-visual welcome-visual" data-media-slot="welcome">
+                        <img
+                            src="assets/images/welcome.avif"
+                            alt="صورة تطبيق Welcome للتسوّق من متاجر متعددة"
+                            class="project-image"
+                        >
+                        <span class="project-tag">تجارة إلكترونية</span>
+
+                        <span class="visual-caption">تسوّق من متاجر متعددة</span>
+                    </div>
+
+                    <div class="project-info">
+                        <div class="project-meta">
+                            <span>04</span>
+                            <span>التجارة الإلكترونية</span>
+                        </div>
+
+                        <h3>Welcome</h3>
+
+                        <p>
+                            تطبيق يجمع منتجات من متاجر متعددة، حتى يتمكن
+                            المستخدم من استكشافها والتسوّق منها.
+                        </p>
+
+                        <a href="contact.html" class="project-link">
+                            اعرف المزيد <span>↗</span>
+                        </a>
+                    </div>
+
+                </article>
+
+                <!-- Project 5 -->
+                <article class="project-card" data-category="systems">
+
+                    <div class="project-visual hospital-visual" data-media-slot="hospital-management">
+                        <img
+                            src="assets/images/hospital.avif"
+                            alt="صورة أنظمة إدارة المشافي"
+                            class="project-image"
+                        >
+                        <span class="project-tag">أنظمة إدارة المشافي</span>
+
+                        <span class="visual-caption">تنظيم العمل والمعلومات الصحية</span>
+                    </div>
+
+                    <div class="project-info">
+                        <div class="project-meta">
+                            <span>05</span>
+                            <span>أنظمة إدارية</span>
+                        </div>
+
+                        <h3>أنظمة إدارة المشافي</h3>
+
+                        <p>
+                            أنظمة تساعد على ترتيب المعلومات وبعض العمليات
+                            الإدارية اليومية في المشافي.
+                        </p>
+
+                        <a href="contact.html" class="project-link">
+                            اعرف المزيد <span>↗</span>
+                        </a>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Project CTA -->
+        <section class="projects-cta">
+
+            <span class="section-label">هل تعمل على فكرة؟</span>
+
+            
+
+            <p>
+                أرسل لنا نبذة عن فكرتك أو احتياجك، ونبدأ الحديث عن الخطوات الممكنة.
+            </p>
+
+            <a href="contact.html" class="nav-button">
+                تواصل معنا <span>→</span>
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <a href="index.html" class="logo" aria-label="الرئيسية - SmartLand">
+                <img src="assets/logo/smartland-logo.svg" alt="" class="logo-mark" aria-hidden="true">
+                <span class="logo-wordmark"><span class="logo-word-smart">Smart</span><span class="logo-word-land">Land</span></span>
+            </a>
+
+            <p>موقع تعريفي أُعدّ ضمن مشروع طلابي عن Smart Land.</p>
+
+            <span class="footer-copy">
+                © 2026 Smart Land. جميع الحقوق محفوظة.
+            </span>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

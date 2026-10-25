@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="235 20 250 150" role="img" aria-labelledby="logo-title">
+  <title id="logo-title">رمز SmartLand</title>
+  <g fill="none" stroke="#C5DD68" stroke-linecap="round" stroke-linejoin="round" stroke-width="30">
+    <path d="M322 38 264 96l58 58" />
+    <path d="m398 38 58 58-58 58" />
+  </g>
+  <path fill="#21856F" d="M360 61c-13 23-19 29-44 35 25 7 31 13 44 36 13-23 19-29 44-36-25-6-31-12-44-35Z" />
+</svg>
